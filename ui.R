@@ -1,8 +1,9 @@
 library(shiny)
 
-ui = bootstrapPage(
+ui <- fluidPage(
   # verbatimTextOutput("results"),
   # verbatimTextOutput("point"),
+  titlePanel("he walkin"),
   htmlOutput("board"),
   tags$script('
     downKeyCount = 0;
