@@ -37,4 +37,9 @@ server = function(input, output, session){
     str <- paste0(str, PLAYER)
     output$board <- renderUI({ HTML(str) })
   }
+  
+  output$keep_alive <- renderText({
+    req(input$alive_count)
+    input$alive_count
+  })
 }
